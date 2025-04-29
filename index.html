@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samura Kitchen - Sushi Delivery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dark-gray: #2A2A2A;
+            --gold: #D4AF37;
+            --black: #000000;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark-gray);
+            color: var(--white);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('knife.webp');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1.main-title {
+            font-family: 'Cinzel', serif;
+            font-size: 4.5rem;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1.main-title {
+                font-size: 3rem;
+            }
+        }
+        .section {
+            padding: 50px 0;
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 2.5rem;
+            color: var(--gold);
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .about-text {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .menu-card {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            border: 1px solid var(--gold);
+            text-align: center;
+        }
+
+        .menu-card h3 {
+            color: var(--gold);
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .menu-card .price {
+            font-size: 2rem;
+            color: var(--gold);
+            margin: 20px 0;
+        }
+
+        .ingredients-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .ingredients-category {
+            text-align: center;
+        }
+
+        .ingredients-category h3 {
+            color: var(--gold);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .ingredients-list {
+            list-style: none;
+        }
+
+        .ingredients-list li {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .special-recommendations {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            margin-top: 0px;
+        }
+
+        .loyalty-program {
+            text-align: center;
+            background: var(--gold);
+            color: var(--black);
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .loyalty-program h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .menu-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1 class="main-title">Samura Kitchen</h1>
+            <h1>FREE DELIVERY at your room</h1>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <p class="about-text">
+                We offer fresh, first-hand products to ensure a good and comfortable experience. We delve into the Asian world, exploring its culinary richness and capturing the essence of traditional sushi with a modern twist.
+            </p>
+        </div>
+    </section>
+
+    <section class="section" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <h3>HOSOMAKI</h3>
+                    <p>10 PIECES</p>
+                    <p>1 Ingredient</p>
+                    <p>SOY</p>
+                    <div class="price">8€</div>
+                    <p>Salmon: Cured in salt & sugar with a touch of lime zest (to intensify the flavour and give a firmer and tastier flavor).</p>
+                </div>
+
+                <div class="menu-card">
+                    <h3>FUTOMAKI</h3>
+                    <p>10 PIECES</p>
+                    <p>2/3 INGREDIENTS</p>
+                    <p>SOY</p>
+                    <div class="price">9€</div>
+                    <p>Crispy Chicken: with avocado (providing creaminess and good fat to balance the crunch of the chicken), philadelphia, Japanese mayo and crispy onion</p>
+                </div>
+
+                <div class="menu-card">
+                    <h3>URAMAKI</h3>
+                    <p>10 PIECES</p>
+                    <p>3 INGREDIENTS</p>
+                    <p>SOY</p>
+                    <div class="price">10€</div>
+                    <p>Duck: with chives (giving a fresh and slightly spicy touch, ideal for cutting through the richness of the duck and giving it freshness) honey and sesame seeds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="ingredients">
+        <div class="container">
+            <h2 class="section-title">Ingredients Selection</h2>
+            <div class="ingredients-container">
+                <div class="ingredients-category">
+                    <h3>MAIN INGREDIENTS</h3>
+                    <ul class="ingredients-list">
+                        <li>SALMON</li>
+                        <li>TUNA</li>
+                        <li>SHRIMP</li>
+                        <li>CRISPY CHICKEN</li>
+                        <li>DUCK</li>
+                    </ul>
+                </div>
+
+                <div class="ingredients-category">
+                    <h3>COMBINATION INGREDIENTS</h3>
+                    <ul class="ingredients-list">
+                        <li>AVOCADO</li>
+                        <li>CUCUMBER</li>
+                        <li>PHILADELPHIA</li>
+                        <li>MANGO</li>
+                        <li>CHIVE</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="special-recommendations">
+                <h2 class="section-title">BEST RECOMMENDATIONS</h2>
+                <p>Premium Sushi Combination</p>
+                <p>Enjoy a delightful mix of our three signature rolls:</p>
+                <ul style="list-style: none; margin: 20px 0;">
+                    <li>3 pieces of Hosomaki (Salmon)</li>
+                    <li>3 pieces of Futomaki (Crispy Chicken)</li>
+                    <li>4 pieces of Uramaki (Duck)</li>
+                </ul>
+                <p class="price">12€</p>
+            </div>
+
+            <div class="loyalty-program">
+                <h2>FOR EVERY 5 PURCHASES YOU GET ONE AS A GIFT</h2>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
